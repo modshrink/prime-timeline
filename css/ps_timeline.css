@@ -1,3 +1,4 @@
+@charset "UTF-8";
 
 #ps_wrap {
 	position: fixed;
@@ -71,4 +72,3 @@
 	vertical-align: baseline;
 	line-height: 16px;
 }
-
