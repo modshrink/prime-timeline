@@ -66,7 +66,8 @@
 	border: 1px solid #CCCCCC;
 }
 
-#ps_panel table tbody tr td, #ps_panel table tbody tr th {
+#ps_panel table tbody tr th,
+#ps_panel table tbody tr td {
 	table-layout: fixed;
 	font-family: "Open Sans", sans-serif;
 	font-size: 12px;
@@ -75,4 +76,8 @@
 	padding: 2px 4px;
 	vertical-align: baseline;
 	line-height: 16px;
+}
+
+#ps_panel table tbody tr th {
+	vertical-align: middle;
 }
