@@ -54,6 +54,7 @@
 	text-align: left;
 	font-size: 12px;
 	overflow: auto;
+	padding: 0 10px;
 }
 
 #ps_panel table {
@@ -61,14 +62,17 @@
 	table-layout: fixed;
 	word-break:break-all;
 	word-wrap:break-word;
+	border-collapse: collapse;
+	border: 1px solid #CCCCCC;
 }
 
 #ps_panel table tbody tr td, #ps_panel table tbody tr th {
 	table-layout: fixed;
 	font-family: "Open Sans", sans-serif;
 	font-size: 12px;
-	border-top: 1px solid #cccccc;
-	border-left: 1px solid #cccccc;
+	border-top: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	padding: 2px 4px;
 	vertical-align: baseline;
 	line-height: 16px;
 }
