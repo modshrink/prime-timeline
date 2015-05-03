@@ -13,7 +13,7 @@
 	overflow: hidden;
 }
 
-#ps_head	{
+#ps_head {
 	position: fixed;
 	width: 100%;
 	top: 32px;
@@ -40,7 +40,7 @@
 	line-height: 12px;
 }
 
-#ps_panel	{
+#ps_panel {
 	position: absolute;
 	width: 100%;
 	top: 72px;
