@@ -1,6 +1,6 @@
 <p><?php echo sprintf( __( 'Total execution time (%.2f msec)', 'prime-timeline' ), $exec ); ?></p>
 <table class="wp-list-table widefat fixed pages">
-	<tbody>
+	<thead>
 		<tr id='ps_tr_head'>
 			<th width='5%'><?php _e( 'No.', 'prime-timeline' ); ?></th>
 			<th width='5%'><?php _e( 'Total', 'prime-timeline' ); ?><br />(msec)</th>
@@ -12,3 +12,5 @@
 			<th width='5%'><?php _e( 'Diff', 'prime-timeline' ); ?><br />(msec)</th>
 			<th width='5%'><?php _e( 'This', 'prime-timeline' ); ?><br />(msec)</th>
 		</tr>
+	</thead>
+	<tbody>
