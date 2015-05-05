@@ -5,7 +5,7 @@ jQuery(document).ready(function() {
 		var cls = jQuery(elm).parent().attr('class');
 
 		if (id == 'ps_slow') {
-			search_slow();	
+			search_slow();
 		}
 
 		if (cls == 'ps_hide') {
@@ -50,5 +50,6 @@ jQuery(document).ready(function() {
 		});
 	}
 
-});
+	jQuery('#ps_panel tr:even').addClass('alt');
 
+});
