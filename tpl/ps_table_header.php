@@ -1,5 +1,5 @@
 <p><?php echo sprintf( 'Total execution time (%.2f msec)', $exec); ?></p>
-<table>
+<table class="wp-list-table widefat fixed pages">
 	<tbody>
 		<tr id='ps_tr_head'>
 			<th width='5%'>No.</th>
