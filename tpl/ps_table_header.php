@@ -12,4 +12,3 @@
 			<th width='5%'>Diff<br />(msec)</th>
 			<th width='5%'>This<br />(msec)</th>
 		</tr>
-
