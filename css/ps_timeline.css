@@ -56,6 +56,20 @@
 	overflow: auto;
 	padding: 0 10px;
 }
+
+tr.ps_file,
+tr.ps_sql,
+tr.ps_hook,
+tr.ps_hook_do,
+tr.ps_hook_pass,
+tr.ps_slow {
+	display: none;
+}
+
+#ps_panel tr.show {
+	display: block;
+}
+
 /*
 #ps_panel table {
 	width: 100%;
