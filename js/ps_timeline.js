@@ -1,3 +1,52 @@
+jQuery(document).ready(function($){
+
+	$('#ps_panel tr:even').addClass('alt');
+
+	$('#ps_panel tr').addClass('show');
+
+	$("#wp-admin-bar-prime-timeline > a").click(function(e) {
+		e.preventDefault();
+		$("#ps_wrap").toggle();
+	});
+
+	$("#ps_file a").on("click", function() {
+		$("tr.ps_file").toggleClass("show");
+		$(this).toggleClass("button-primary");
+		$(this).toggleClass("button-secondary");
+	 });
+
+	$("#ps_sql a").on("click", function() {
+		$("tr.ps_sql").toggleClass("show");
+		$(this).toggleClass("button-primary");
+		$(this).toggleClass("button-secondary");
+	 });
+
+	$("#ps_hook a").on("click", function() {
+		$("tr.ps_hook").toggleClass("show");
+		$(this).toggleClass("button-primary");
+		$(this).toggleClass("button-secondary");
+	 });
+
+	$("#ps_hook_do a").on("click", function() {
+		$("tr.ps_hook_do").toggleClass("show");
+		$(this).toggleClass("button-primary");
+		$(this).toggleClass("button-secondary");
+	 });
+
+	$("#ps_hook_pass a").on("click", function() {
+		$("tr.ps_hook_pass").toggleClass("show");
+		$(this).toggleClass("button-primary");
+		$(this).toggleClass("button-secondary");
+	 });
+
+	$("#ps_slow a").on("click", function() {
+		$("tr.ps_slow").toggleClass("show");
+		$(this).toggleClass("button-primary");
+		$(this).toggleClass("button-secondary");
+	 });
+});
+
+/*
 jQuery(document).ready(function() {
 
 	function menu_main(elm) {
@@ -50,6 +99,6 @@ jQuery(document).ready(function() {
 		});
 	}
 
-	jQuery('#ps_panel tr:even').addClass('alt');
 
 });
+*/
