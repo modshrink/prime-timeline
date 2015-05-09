@@ -2,45 +2,60 @@ jQuery(document).ready(function($){
 
 	$('#ps_panel tr:even').addClass('alt');
 
-	$('#ps_panel tr').addClass('show');
+	$('#ps_panel tr.ps_file').addClass('show_file');
+	$('#ps_panel tr.ps_sql').addClass('show_sql');
+	$('#ps_panel tr.ps_hook').addClass('show_hook');
+	$('#ps_panel tr.ps_hook_do').addClass('show_hook_do');
+	$('#ps_panel tr.ps_hook_pass').addClass('show_hook_pass');
+	$('#ps_panel tr.ps_slow').addClass('show_slow');
 
 	$("#wp-admin-bar-prime-timeline > a").click(function(e) {
 		e.preventDefault();
 		$("#ps_wrap").toggle();
 	});
 
+	$("#ps_all a").on("click", function() {
+		$("tr.ps_file").addClass("show_file");
+		$("tr.ps_sql").addClass("show_sql");
+		$("tr.ps_hook").addClass("show_hook");
+		$("tr.ps_hook_do").addClass("show_hook_do");
+		$("tr.ps_hook_pass").addClass("show_hook_pass");
+		$("tr.ps_slow").addClass("show_slow");
+		$("#ps_file a, #ps_sql a, #ps_hook a, #ps_hook_do a, #ps_hook_pass a, #ps_slow a").addClass("button-primary");
+	 });
+
 	$("#ps_file a").on("click", function() {
-		$("tr.ps_file").toggleClass("show");
+		$("tr.ps_file").toggleClass("show_file");
 		$(this).toggleClass("button-primary");
 		$(this).toggleClass("button-secondary");
 	 });
 
 	$("#ps_sql a").on("click", function() {
-		$("tr.ps_sql").toggleClass("show");
+		$("tr.ps_sql").toggleClass("show_sql");
 		$(this).toggleClass("button-primary");
 		$(this).toggleClass("button-secondary");
 	 });
 
 	$("#ps_hook a").on("click", function() {
-		$("tr.ps_hook").toggleClass("show");
+		$("tr.ps_hook").toggleClass("show_hook");
 		$(this).toggleClass("button-primary");
 		$(this).toggleClass("button-secondary");
 	 });
 
 	$("#ps_hook_do a").on("click", function() {
-		$("tr.ps_hook_do").toggleClass("show");
+		$("tr.ps_hook_do").toggleClass("show_hook_do");
 		$(this).toggleClass("button-primary");
 		$(this).toggleClass("button-secondary");
 	 });
 
 	$("#ps_hook_pass a").on("click", function() {
-		$("tr.ps_hook_pass").toggleClass("show");
+		$("tr.ps_hook_pass").toggleClass("show_hook_pass");
 		$(this).toggleClass("button-primary");
 		$(this).toggleClass("button-secondary");
 	 });
 
 	$("#ps_slow a").on("click", function() {
-		$("tr.ps_slow").toggleClass("show");
+		$("tr.ps_slow").toggleClass("show_slow");
 		$(this).toggleClass("button-primary");
 		$(this).toggleClass("button-secondary");
 	 });
