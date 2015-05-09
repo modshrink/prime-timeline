@@ -66,8 +66,13 @@ tr.ps_slow {
 	display: none;
 }
 
-#ps_panel tr.show {
-	display: block;
+#ps_panel tr.show_file,
+#ps_panel tr.show_sql,
+#ps_panel tr.show_hook,
+#ps_panel tr.show_hook_do,
+#ps_panel tr.show_hook_pass,
+#ps_panel tr.show_slow {
+	display: table-row;
 }
 
 /*
